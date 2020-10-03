@@ -6,5 +6,11 @@ CREATE TABLE customers (
 	email VARCHAR(30)
 );
 
+-- insert some rows
+INSERT INTO customers (first_name, last_name, email) VALUES
+	('Mircea', 'Ionescu', 'mi@email.com'),
+	('Codrin', 'Escu', 'ce@email.com'),
+	('Ion', 'Prostu', 'ip@email.com');
+
 -- queries
 SELECT * FROM customers;
