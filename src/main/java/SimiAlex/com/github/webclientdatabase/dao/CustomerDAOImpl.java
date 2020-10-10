@@ -10,7 +10,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import SimiAlex.com.github.webclientdatabase.model.Customer;
 
-@Transactional
 @Repository
 public class CustomerDAOImpl implements CustomerDAO 
 {

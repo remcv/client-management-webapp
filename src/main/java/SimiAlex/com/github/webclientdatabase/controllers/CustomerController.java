@@ -3,31 +3,29 @@ package SimiAlex.com.github.webclientdatabase.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import SimiAlex.com.github.webclientdatabase.dao.CustomerDAO;
+import SimiAlex.com.github.webclientdatabase.services.CustomerService;
 
 @Controller
 public class CustomerController 
 {
     // fields
-    private CustomerDAO customerDAO;
+    private CustomerService customerService;
 
     // constructor
     @Autowired
-    public CustomerController(CustomerDAO cDao)
+    public CustomerController(CustomerService cs)
     {
-        this.customerDAO = cDao;
+        this.customerService = cs;
     }
 
     // methods
-    @RequestMapping({"", "/"})
+    @GetMapping(path = {"", "/"})
     public String listCustomers(Model theModel)
     {
-        System.out.println("--------");
-        System.out.println(customerDAO.getCustomers());
-
-        theModel.addAttribute("customerList", customerDAO.getCustomers());
+        theModel.addAttribute("customerList", customerService.getCustomers());
         return "index";
     }
 }
