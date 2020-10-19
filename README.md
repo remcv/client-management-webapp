@@ -18,4 +18,8 @@ CREATE TABLE customers (
 	email VARCHAR(30)
 );
 ```
+#### Screenshots
+
+![index_page](index_page.png)  
+
 Inspired by a tutorial of Chad Darby on Udemy.
