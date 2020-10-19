@@ -18,3 +18,4 @@ CREATE TABLE customers (
 	email VARCHAR(30)
 );
 ```
+Inspired by a tutorial of Chad Darby on Udemy.
