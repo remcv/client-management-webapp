@@ -1,7 +1,7 @@
 # client-management-webapp
 
 #### Basic info
-Simple Spring Boot webapp to track information about customers (CRUD).
+Simple Spring Boot webapp to track information about customers (CRUD). It includes the ability to search by the client's last name.
 
 #### The app uses
 - frontend: HTML, CSS, Thymeleaf template engine
