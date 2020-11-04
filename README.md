@@ -22,4 +22,4 @@ CREATE TABLE customers (
 
 ![index_page](index_page.png)  
 
-Inspired by a tutorial of Chad Darby on Udemy.
+Inspired by Chad Darby's tutorial on Udemy.
